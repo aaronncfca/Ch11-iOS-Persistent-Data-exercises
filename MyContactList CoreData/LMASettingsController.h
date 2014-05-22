@@ -1,0 +1,17 @@
+//
+//  LMASettingsController.h
+//  MyContactList CoreData
+//
+//  Created by Jakob Iversen on 9/9/13.
+//  Copyright (c) 2013 Learning Mobile Apps. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LMASettingsController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sgmtAscending;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *sgmtSortField;
+- (IBAction)sortDirectionChanged:(id)sender;
+- (IBAction)sortFieldChanged:(id)sender;
+
+@end
